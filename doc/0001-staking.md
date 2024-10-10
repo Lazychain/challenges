@@ -33,14 +33,14 @@ Rules:
 
 The piecewise function should be:
 
-$
+$$
     f(x) = \begin{cases}
         7, & 0 < x < 7 \\
         x, & 7 < x < 14 \\
         14, & 14 < x < 21 \\
         x-7, & 21 < x < 28
     \end{cases}
-$
+$$
 
 Where `x` is measured in days.
 

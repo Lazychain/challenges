@@ -14,14 +14,15 @@ graph RL
     C(User)
     D(TOKEN ERC-20)
 
-    subgraph ContractStaking
+    subgraph StakingContract
         A
     end
 
-    B --> A
-    C -- stake / unstake --> A
+    B -- stake --> A
+    A -- unstake --> B
+    C -- owns --> B
     A -- mint(allowance) --> D
-    D -- ERC20 rewards --> C
+    D -- Claims ERC20 rewards --> C
 ```
 
 Rules:

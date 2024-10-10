@@ -26,9 +26,9 @@ graph RL
 
 Rules:
 
-- The rewards earned must be calculated (stead of having a constant curve time for generating ERC20 rewards) using a [monotonic](https://en.wikipedia.org/wiki/Monotonic_function) [piecewise](https://en.wikipedia.org/wiki/Piecewise_function) function.
+- The rewards earned must be calculated (instead of having a constant curve time for generating ERC20 rewards) using a [monotonic](https://en.wikipedia.org/wiki/Monotonic_function) [piecewise](https://en.wikipedia.org/wiki/Piecewise_function) function.
 - This curve should be pass it as parameter in the constructor in the form of an array.
-- The locking period should be 7 days
+- The locking period should be 7 days.
 
 The piecewise function should be:
 
@@ -41,7 +41,7 @@ $
     \end{cases}
 $
 
-Where x is measured in days.
+Where `x` is measured in days.
 
 - You can use this [playground](https://trkern.github.io/p.html?7_0_7_4__x_7_14_4__14_14_21_6__x-7_21_28_6) to plot it and see its behavior.
 
